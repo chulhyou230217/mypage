@@ -85,6 +85,7 @@
             margin-right: 10px;
         }
     </style>
+    
 </head>
 
 <body>
@@ -92,13 +93,24 @@
         <div>
             <h1>내 생의 최고의 영화들!</h1>
         </div>
-        <button>영화 기록하기</button>
+        <button onclick="hey()">영화 기록하기</button>
     </div>
     <div class="mypost">
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">영화URL</label>
         </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>-- 선택하기 --</option>
+              <option value="1">⭐</option>
+              <option value="2">⭐⭐</option>
+              <option value="3">⭐⭐⭐</option>
+              <option value="4">⭐⭐⭐⭐</option>
+              <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+          </div>
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
             <label for="floatingTextarea">코멘트</label>
